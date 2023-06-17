@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ece73c1-284e-419a-ba95-fde14145019a" name="Changes" comment="updates">
+    <list default="true" id="2ece73c1-284e-419a-ba95-fde14145019a" name="Changes" comment="some updates">
+      <change afterPath="$PROJECT_DIR$/themes/holy/static/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/_default/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/holy/layouts/_default/single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/partials/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/holy/layouts/partials/head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/partials/li.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/holy/layouts/partials/li.html" afterDir="false" />
     </list>
     <list id="c07bd266-c960-41c8-b174-39ce7aee6d48" name="untracked" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +42,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/hamza.fetuga/Documents/blog/content/posts",
+    "last_opened_file_path": "/Users/hamza.fetuga/Documents/blog/themes/holy",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -51,6 +54,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/themes/holy" />
       <recent name="$PROJECT_DIR$/content/posts" />
       <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/assets" />
@@ -74,7 +78,7 @@
       <workItem from="1682503298685" duration="955000" />
       <workItem from="1682974631118" duration="2693000" />
       <workItem from="1686861933923" duration="18234000" />
-      <workItem from="1687026489820" duration="7275000" />
+      <workItem from="1687026489820" duration="9962000" />
     </task>
     <task id="LOCAL-00001" summary="updates">
       <created>1687022707512</created>
@@ -132,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687032866860</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="some updates">
+      <created>1687034512537</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1687034512537</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +165,7 @@
     <MESSAGE value="update holy submodule commit" />
     <MESSAGE value="update base url" />
     <MESSAGE value="updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="updates" />
+    <MESSAGE value="some updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="some updates" />
   </component>
 </project>
