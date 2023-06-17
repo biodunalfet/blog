@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ece73c1-284e-419a-ba95-fde14145019a" name="Changes" comment="updates">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/hugo.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/hugo.yaml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/holy" beforeDir="false" afterPath="$PROJECT_DIR$/themes/holy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/holy/layouts/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/partials/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/holy/layouts/partials/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/partials/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/holy/layouts/partials/head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/partials/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/holy/layouts/partials/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/partials/li.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/holy/layouts/partials/li.html" afterDir="false" />
     </list>
+    <list id="c07bd266-c960-41c8-b174-39ce7aee6d48" name="untracked" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +30,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/themes/holy" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -38,7 +46,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "9dff9e0e",
     "last_opened_file_path": "/Users/hamza.fetuga/Documents/blog/content/posts",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -63,6 +71,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="2ece73c1-284e-419a-ba95-fde14145019a" name="Changes" comment="" />
+      <changelist id="c07bd266-c960-41c8-b174-39ce7aee6d48" name="untracked" comment="" />
       <created>1681668286892</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -72,7 +81,8 @@
       <workItem from="1681804698211" duration="5052000" />
       <workItem from="1682503298685" duration="955000" />
       <workItem from="1682974631118" duration="2693000" />
-      <workItem from="1686861933923" duration="14794000" />
+      <workItem from="1686861933923" duration="18234000" />
+      <workItem from="1687026489820" duration="5990000" />
     </task>
     <task id="LOCAL-00001" summary="updates">
       <created>1687022707512</created>
@@ -81,7 +91,42 @@
       <option name="project" value="LOCAL" />
       <updated>1687022707512</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add workflow">
+      <created>1687023062909</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687023062909</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update holy submodule commit">
+      <created>1687023252006</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687023252006</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update base url">
+      <created>1687023726998</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687023726998</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update base url">
+      <created>1687024439637</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1687024439637</updated>
+    </task>
+    <task id="LOCAL-00006" summary="updates">
+      <created>1687026889985</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1687026889985</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,6 +144,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="add workflow" />
+    <MESSAGE value="update holy submodule commit" />
+    <MESSAGE value="update base url" />
     <MESSAGE value="updates" />
     <option name="LAST_COMMIT_MESSAGE" value="updates" />
   </component>
