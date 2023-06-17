@@ -4,29 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ece73c1-284e-419a-ba95-fde14145019a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/android-touch-feedback.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/book-review-a-mind-at-play.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/book-review-being-wrong.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/book-review-muhammed.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/book-review-pachinko.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/book-review-pragmatic-programmer.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/book-review-triple-package.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/flutter-first-impressions.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/jetpack-navigation-thoughts.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/picks-of-23-Jan.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/a-mind-at-play.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/info-theory.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/themes/holy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/holy/layouts/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/partials/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/holy/layouts/partials/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/partials/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/holy/layouts/partials/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/partials/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/holy/layouts/partials/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/partials/li.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/holy/layouts/partials/li.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/theme.toml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/holy/theme.toml" afterDir="false" />
+    <list default="true" id="2ece73c1-284e-419a-ba95-fde14145019a" name="Changes" comment="updates">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/hugo.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +23,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -90,11 +72,34 @@
       <workItem from="1681804698211" duration="5052000" />
       <workItem from="1682503298685" duration="955000" />
       <workItem from="1682974631118" duration="2693000" />
-      <workItem from="1686861933923" duration="14188000" />
+      <workItem from="1686861933923" duration="14794000" />
     </task>
+    <task id="LOCAL-00001" summary="updates">
+      <created>1687022707512</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1687022707512</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="updates" />
   </component>
 </project>
