@@ -1,4 +1,4 @@
-baseURL = 'http://biodunalfet.github.io/blog'
+baseURL = ''
 languageCode = 'en-us'
 title = 'Hamza F.'
 [markup]
