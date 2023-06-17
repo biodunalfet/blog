@@ -1,5 +1,6 @@
-baseURL = ''
 languageCode = 'en-us'
+baseURL = 'https://biodunalfet.github.io/blog'
+theme='holy'
 title = 'Hamza F.'
 [markup]
    [markup.highlight]
