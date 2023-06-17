@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ece73c1-284e-419a-ba95-fde14145019a" name="Changes" comment="updates">
-      <change afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/hugo.yaml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy" beforeDir="false" afterPath="$PROJECT_DIR$/themes/holy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/holy/layouts/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/partials/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/holy/layouts/partials/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/partials/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/holy/layouts/partials/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/partials/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/holy/layouts/partials/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/partials/li.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/holy/layouts/partials/li.html" afterDir="false" />
     </list>
     <list id="c07bd266-c960-41c8-b174-39ce7aee6d48" name="untracked" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +22,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/themes/holy" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -46,7 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "9dff9e0e",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "/Users/hamza.fetuga/Documents/blog/content/posts",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -82,7 +74,7 @@
       <workItem from="1682503298685" duration="955000" />
       <workItem from="1682974631118" duration="2693000" />
       <workItem from="1686861933923" duration="18234000" />
-      <workItem from="1687026489820" duration="5990000" />
+      <workItem from="1687026489820" duration="7275000" />
     </task>
     <task id="LOCAL-00001" summary="updates">
       <created>1687022707512</created>
@@ -126,7 +118,21 @@
       <option name="project" value="LOCAL" />
       <updated>1687026889985</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="updates">
+      <created>1687032770398</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1687032770398</updated>
+    </task>
+    <task id="LOCAL-00008" summary="updates">
+      <created>1687032866860</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1687032866860</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
