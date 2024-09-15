@@ -4,52 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ece73c1-284e-419a-ba95-fde14145019a" name="Changes" comment="setup light/dark theme">
+    <list default="true" id="2ece73c1-284e-419a-ba95-fde14145019a" name="Changes" comment="some fixes">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/firebase-hosting-merge.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/firebase-hosting-merge.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/firebase-hosting-pull-request.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/firebase-hosting-pull-request.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/flutter-first-impressions.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/flutter-first-impressions.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy" beforeDir="false" afterPath="$PROJECT_DIR$/themes/holy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/archetypes/default.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/exampleSite/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/exampleSite/.hugo_build.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/exampleSite/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/exampleSite/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/exampleSite/config.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/exampleSite/configTaxo.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/exampleSite/content/_index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/exampleSite/content/about.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/exampleSite/content/archives.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/exampleSite/content/homepage/about.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/exampleSite/content/homepage/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/exampleSite/content/homepage/work.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/exampleSite/content/post/_index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/exampleSite/content/post/emoji-support.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/exampleSite/content/post/markdown-syntax.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/exampleSite/content/post/math-typesetting.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/exampleSite/content/post/placeholder-text.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/exampleSite/content/post/rich-content.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/exampleSite/layouts/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/exampleSite/static/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/exampleSite/static/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/images/screenshot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/images/tn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/_default/baseof.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/_default/list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/_default/single.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/partials/footer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/partials/head-extra.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/partials/head.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/partials/header.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/partials/li.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/partials/prose.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/shortcodes/li.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/theme.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/holy/yarn.lock" beforeDir="false" />
     </list>
     <list id="c07bd266-c960-41c8-b174-39ce7aee6d48" name="untracked" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Dockerfile" />
+        <option value="package.json" />
       </list>
     </option>
   </component>
@@ -130,7 +89,7 @@
       <workItem from="1686861933923" duration="18234000" />
       <workItem from="1687026489820" duration="10209000" />
       <workItem from="1713457657133" duration="663000" />
-      <workItem from="1726376372156" duration="481000" />
+      <workItem from="1726376372156" duration="982000" />
     </task>
     <task id="LOCAL-00001" summary="updates">
       <created>1687022707512</created>
@@ -202,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1687040665847</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="some fixes">
+      <option name="closed" value="true" />
+      <created>1726376991449</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1726376991449</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +193,7 @@
     <MESSAGE value="updates" />
     <MESSAGE value="some updates" />
     <MESSAGE value="setup light/dark theme" />
-    <option name="LAST_COMMIT_MESSAGE" value="setup light/dark theme" />
+    <MESSAGE value="some fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="some fixes" />
   </component>
 </project>
