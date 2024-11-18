@@ -2,6 +2,9 @@ languageCode = 'en-us'
 baseURL = 'https://hamzafetuga.com'
 theme='holy'
 title = 'Hamza F.'
+paginate = 3
+[params]
+    copyright = "© 2024 Hamza F."
 [markup]
    [markup.highlight]
        anchorLineNos = false
@@ -19,3 +22,11 @@ title = 'Hamza F.'
        tabWidth = 4
 [markup.goldmark.renderer]
    unsafe = true
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/homepage/about/"
+    weight = 10

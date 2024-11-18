@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ece73c1-284e-419a-ba95-fde14145019a" name="Changes" comment="fix the blog">
-      <change beforePath="$PROJECT_DIR$/content/posts/qr-feature-tweet-image-effects.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/qr-feature-tweet-image-effects.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/homepage/about.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/partials/li.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/holy/layouts/partials/li.html" afterDir="false" />
     </list>
     <list id="c07bd266-c960-41c8-b174-39ce7aee6d48" name="untracked" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +25,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/themes/holy" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -42,7 +45,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/hamzafetuga/WebstormProjects/blog/content/posts",
+    "last_opened_file_path": "/Users/hamzafetuga/WebstormProjects/blog/content/homepage",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -54,6 +57,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/homepage" />
       <recent name="$PROJECT_DIR$/content/posts" />
       <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/themes/holy" />
@@ -175,7 +179,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731896804021</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fix the blog">
+      <option name="closed" value="true" />
+      <created>1731896853834</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1731896853834</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
