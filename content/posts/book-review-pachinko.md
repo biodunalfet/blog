@@ -17,4 +17,4 @@ tags:
     - The Yakuza
     - identity issues and racism
     - the struggle of being a woman in a poverty-stricken patriarchal society. raising kids, dealing with difficult men who don't want them to work
-    - complexity of parent-children relationships get a better understanding of its role in modern technology and computing. This book solved most of that but I guess I was more impressed by his great personality and wholesome life outlook.
+    - complexity of parent-children relationships
