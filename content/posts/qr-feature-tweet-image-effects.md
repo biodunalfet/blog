@@ -1,5 +1,5 @@
 ---
-title: "[wip] new feature alert: effects for tweet images"
+title: "[draft] new feature alert: effects for tweet images"
 date: 2021-06-15T11:46:17+01:00
 draft: false
 tags:
