@@ -34,4 +34,6 @@ error, for one major positive outcome of error is that it sets you on the path t
 Another part I really liked was how time and time again, it reiterates the idea that no concept is absolute. For example,
 relying on our communities for the truth could be good (we call it social proof) and bad (we call it group-think).
 Eye witness evidence is not always reliable, the golden rule is fallible in the sense that what's best for you isn't 
-necessary good for others and so on and so forth. Context matters a lot!
+necessary good for others and so on and so forth.
+
+Context matters!

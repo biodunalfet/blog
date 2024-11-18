@@ -5,9 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ece73c1-284e-419a-ba95-fde14145019a" name="Changes" comment="some fixes">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/firebase-hosting-merge.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/firebase-hosting-merge.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/firebase-hosting-pull-request.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/firebase-hosting-pull-request.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/posts/learning-react-svgdashboard.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/posts/qr-feature-converting-tweets-to-beautiful-images.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/posts/qr-feature-img-bg-pexels.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/posts/qr-feature-stitching-tweet-and-video.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/posts/qr-feature-tweet-image-effects.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/qr-collage-min.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/qr-video-whatsapp-chat-min.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/svg-dash-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tw-effect-collage.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/book-review-being-wrong.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/book-review-being-wrong.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/book-review-the-network.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/book-review-the-network.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/flutter-first-impressions.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/flutter-first-impressions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/holy" beforeDir="false" afterPath="$PROJECT_DIR$/themes/holy" afterDir="false" />
     </list>
     <list id="c07bd266-c960-41c8-b174-39ce7aee6d48" name="untracked" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +56,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/hamzafetuga/WebstormProjects/blog",
+    "last_opened_file_path": "/Users/hamzafetuga/WebstormProjects/blog/content/posts",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -57,8 +69,8 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/content/posts" />
-      <recent name="$PROJECT_DIR$/themes/holy" />
       <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/themes/holy" />
       <recent name="$PROJECT_DIR$/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
