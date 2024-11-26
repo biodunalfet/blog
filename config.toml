@@ -2,7 +2,6 @@ languageCode = 'en-us'
 baseURL = 'https://hamzafetuga.com'
 theme='holy'
 title = 'Hamza F.'
-paginate = 3
 [params]
     copyright = "© 2024 Hamza F."
 [markup]
@@ -18,13 +17,13 @@ paginate = 3
        lineNumbersInTable = true
        noClasses = true
        noHl = false
-       style = 'catppuccin-latte'
+       style = 'gruvbox'
        tabWidth = 4
 [markup.goldmark.renderer]
    unsafe = true
-
+[pagination]
+   pagerSize = 20
 [menu]
-
   [[menu.main]]
     identifier = "about"
     name = "About"

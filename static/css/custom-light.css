@@ -1,0 +1,5 @@
+.highlight pre code { /* Or your identified selector */
+    font-size: 14px; /* Adjust the size as needed */
+    background-color: #3c3836; /* Light background */
+    color: #fbf1c7; /* Dark text color */
+}
