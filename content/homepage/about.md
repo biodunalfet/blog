@@ -1,12 +1,12 @@
 ---
-title: 'who am i?'
+title: 'Bio'
 button: 'About us'
 weight: 2
 ---
 
 - engineer
 - decade of experience building large scale mobile and backend systems in some of the largest fintechs across Europe and Africa
-- technical interests are: mobile engineering, databases, anomaly detection, mathematical optimisation and hardware design
+- technical interests are: performance optimisation, mobile engineering, databases, anomaly detection techniques, mathematical optimisation and hardware design
 - avid supporter of manchester united 😭
 - amateur chess player. I spend more time watching chess ♟️ games' analyses than actually playing chess
 - spends too much time watching all sorts of videos on YouTube. happy to share some of my favorite channels
