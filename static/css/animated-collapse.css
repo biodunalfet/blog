@@ -1,0 +1,84 @@
+/* Hide the default triangle icon */
+details > summary {
+    list-style: none;
+    cursor: pointer;
+}
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Add custom icon using pseudo-elements */
+details > summary::before {
+    content: "+";
+    display: inline-block;
+    margin-right: 0.5em;
+    font-weight: bold;
+    transition: transform 0.5s ease;
+}
+
+/* Rotate icon when expanded */
+details[open] > summary::before {
+    content: "−";
+    transform: rotate(0deg);
+}
+
+/* Style the content container for animation */
+details > div {
+    overflow: hidden;
+    transition: height 0.5s ease-out;
+    padding: 0 1em;
+}
+
+/* Animation for opening and closing */
+@keyframes collapse-open {
+    from {
+        opacity: 0;
+        max-height: 0;
+        margin-top: 0;
+    }
+    to {
+        opacity: 1;
+        max-height: 1000px;
+        margin-top: 1em;
+    }
+}
+
+@keyframes collapse-close {
+    from {
+        opacity: 1;
+        max-height: 1000px;
+        margin-bottom: 1em;
+    }
+    to {
+        opacity: 0;
+        max-height: 0;
+        margin-bottom: 0;
+    }
+}
+
+details[open] > div {
+    animation: collapse-open 0.5s ease-out forwards;
+}
+
+details:not([open]) > div {
+    animation: collapse-close 0.5s ease-out forwards;
+}
+
+/* Alternative icon animation using rotation */
+/*
+details > summary::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 0.5em;
+  background-image: url('/images/arrow-right.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
+}
+
+details[open] > summary::before {
+  transform: rotate(90deg);
+}
+*/

@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ece73c1-284e-419a-ba95-fde14145019a" name="Changes" comment="tokeniser article">
+    <list default="true" id="2ece73c1-284e-419a-ba95-fde14145019a" name="Changes" comment="add the art of postgres article">
+      <change afterPath="$PROJECT_DIR$/static/css/animated-collapse.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/collapse-animation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/qr-feature-tweet-image-effects.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/qr-feature-tweet-image-effects.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/taop-study-notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/taop-study-notes.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/holy" beforeDir="false" afterPath="$PROJECT_DIR$/themes/holy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/holy/layouts/partials/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/holy/layouts/partials/head.html" afterDir="false" />
     </list>
     <list id="c07bd266-c960-41c8-b174-39ce7aee6d48" name="untracked" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +74,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-WS-241.14494.235" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-WS-243.21565.180" />
       </set>
     </attachedChunks>
   </component>
@@ -95,6 +100,10 @@
       <workItem from="1732193493571" duration="2000" />
       <workItem from="1732420706021" duration="23641000" />
       <workItem from="1732631731264" duration="807000" />
+      <workItem from="1736893028980" duration="986000" />
+      <workItem from="1737033939177" duration="598000" />
+      <workItem from="1739214694339" duration="603000" />
+      <workItem from="1740731192799" duration="4172000" />
     </task>
     <task id="LOCAL-00001" summary="updates">
       <created>1687022707512</created>
@@ -214,7 +223,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732631761764</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add the art of postgres article">
+      <option name="closed" value="true" />
+      <created>1736750436994</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1736750436994</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,6 +260,8 @@
     <MESSAGE value="update the styling of main page" />
     <MESSAGE value="fix some typos" />
     <MESSAGE value="tokeniser article" />
-    <option name="LAST_COMMIT_MESSAGE" value="tokeniser article" />
+    <MESSAGE value="remove wip from post title" />
+    <MESSAGE value="add the art of postgres article" />
+    <option name="LAST_COMMIT_MESSAGE" value="add the art of postgres article" />
   </component>
 </project>

@@ -6,7 +6,7 @@ tags:
     - books
 ---
 
-### Context
+### **Context**
 I needed to do some migration from MongoDB to PostgreSQL for a thing I was building. Even though I'd used Postgres at work,
 we never really got to run complex queries (in code) or work on features that tested the limits of my knowledge. To cut the
 long story short, I decided to take the time to better understand PostgreSQL and its key features.
@@ -17,9 +17,13 @@ After some digging through subreddits and Hacker News, I decided on studying 3 b
 2. [SQL performance explained by Markus Winand](https://use-the-index-luke.com/)
 3. [A Curious Mind by Rob Conery](https://sales.bigmachine.io/curious-moon)
 
-### Key Concepts and Best Practices
+---
+#### **key concepts and some best practices**
 
-#### JOIN Syntax and Best Practices
+<br>
+<br>
+<details>
+  <summary><b>JOIN Syntax and Best Practices</b></summary>
 
 - Use `USING(column)` when joining tables with matching column names (more concise)
 ```postgresql
@@ -33,29 +37,35 @@ JOIN customers USING(customer_id);  -- When both tables have customer_id column
 SELECT * FROM orders o
 JOIN customers c ON o.cust_id = c.customer_id;  -- Different column names
 ```
+</details>
+<br>
+<details>
+<summary><b>Query Testing and Validation</b></summary>
 
-#### Query Testing and Validation
 - `RegreSQL` can be used to create regression tests for your queries
 - Regression tests help ensure query behavior remains consistent across database changes
+</details>
+<br>
+<details>
+<summary><b>Indexing Strategy and Trade-offs</b></summary>
 
-#### Indexing Strategy and Trade-offs
 - Different types of indexes serve different query patterns
 - Indexes have a cost for DML (Data Manipulation Language) operations:
   - `INSERT` operations need to update indexes
   - `UPDATE` operations may need to modify multiple index entries
   - `DELETE` operations need to remove index entries
 - Some indexes are mandatory for data consistency:
-  - `UNIQUE` constraints require an index
-  - `PRIMARY KEY` constraints require an index
-  - `EXCLUDE USING` constraints require an index
+  - `UNIQUE`, `PRIMARY KEY` and `EXCLUDE USING` constraints all require an index
 - Benefits of proper indexing:
   - Faster data access
   - Improved query performance
   - Better data retrieval patterns
+</details>
+<br>
+<details>
+<summary><b>Query Optimization and Analysis</b></summary>
 
-#### Query Optimization and Analysis
-
-- Single Query vs Multiple Queries 
+- Single Query vs Multiple Queries
   - Complex business logic can often be handled more efficiently with a single PostgreSQL query rather than multiple queries with application-level processing
   - Network latency typically forms the bulk of request completion time, making single queries more efficient
   - Databases are optimized to handle complex queries efficiently, leveraging built-in query planning and optimization
@@ -63,7 +73,7 @@ JOIN customers c ON o.cust_id = c.customer_id;  -- Different column names
 - Avoid `SELECT` * as it:
   - Retrieves more rows than needed
   - Utilizes unnecessary network bandwidth
-  - Can break application code during deserialization if column names change 
+  - Can break application code during deserialization if column names change
 - `LATERAL JOIN`: Functions similarly to a foreach loop
 - `DISTINCT ON`: Equivalent to using GROUP BY but picks the first result of each group. Important to use ORDER BY when needed for your use case
 
@@ -79,14 +89,20 @@ join drivers using(driverid)
 where position = 1
 group by driverid
 ```
+</details>
+<br>
+<details>
+<summary><b>Pagination and Performance</b></summary>
 
-#### Pagination and Performance
 - Avoid using `OFFSET` as it scans through all rows before filtering out specified values
 - Standard SQL offers `FETCH` instead of `OFFSET` and `LIMIT`
 - Better pagination can be achieved using index lookups (`row()`) with properly indexed columns
 - Use `EXPLAIN ANALYZE` to understand query performance (helpful visualization tool: https://pev2.pages.dev/)
+</details>
+<br>
+<details>
+<summary><b>Grouping Operations</b></summary>
 
-#### Grouping Operations
 - `HAVING`: Acts like WHERE but applies to group results instead of individual rows
 - `GROUPING SETS`: Concise way to merge results of multiple groupings in one query
 - `ROLL UP`: Generates grouping sets from most granular to least granular. For example:
@@ -97,14 +113,20 @@ GROUP BY ROLLUP(A, B, C) = GROUP BY GROUPING SETS((A, B, C), (A, B), (A), ())
 ```postgresql
 GROUP BY CUBE(A, B, C) = GROUP BY GROUPING SETS((A, B, C), (A, B), (A, C), (B, C), (A), (B), (C), ())
 ```
+</details>
+<br>
+<details>
+<summary><b>Set Operations</b></summary>
 
-#### Set Operations
 - `UNION ALL`: Concatenates result sets (must have matching column types and count)
 - `UNION`: Same as `UNION ALL` but removes duplicates (slower)
 - `EXCEPT`: Excludes results of second query from first query
 - `INTERSECT`: Returns results present in both queries
+</details>
+<br>
+<details>
+<summary><b>Window Functions and Rankings</b></summary>
 
-#### Window Functions and Rankings
 Structure for window functions:
 ```postgresql
 [function you want to apply] OVER (
@@ -116,17 +138,17 @@ Structure for window functions:
 -- e.g Calculating Running Totals within Groups
 
 SELECT
-  customer_id,
-  order_date,
-  amount,
-  SUM(amount) OVER (PARTITION BY customer_id ORDER BY order_date) as running_total
+customer_id,
+order_date,
+amount,
+SUM(amount) OVER (PARTITION BY customer_id ORDER BY order_date) as running_total
 FROM orders;
 ```
 - popular [aggregate functions](https://www.postgresql.org/docs/9.2/functions-aggregate.html) that can be used over a window frame definition
 - general purpose in-built [window function](https://www.postgresql.org/docs/9.2/functions-window.html)
 > Use window functions whenever you want to compute values for each row of the
-result set and those computations depend on other rows within the same result
-set.
+> result set and those computations depend on other rows within the same result
+> set.
 - `RANK()`: Assigns rankings within partitioned data
 ```postgresql
 SELECT product_name,
@@ -135,8 +157,11 @@ SELECT product_name,
        RANK() OVER (PARTITION BY category ORDER BY price DESC) as price_rank
 FROM products;
 ```
+</details>
+<br>
+<details>
+<summary><b>NULL Handling</b></summary>
 
-#### NULL Handling
 - Use `IS DISTINCT FROM` or `IS NOT DISTINCT FROM` for null comparisons instead of `=` or `<>`
 - Remember three-valued logic with nulls:
   - `null = true` evaluates to `null` 
@@ -153,8 +178,11 @@ FROM products;
   | `null` | true | `null` | `null` | true | false |
   | `null` | false | `null` | `null` | true | false |
   | `null` | `null` | `null` | `null` | false | true |
+</details>
+<br>
+<details>
+<summary><b>Useful Built-in Functions</b></summary>
 
-#### Useful Built-in Functions
 - `generate_series()`: Creates a series of values
 ```postgresql
 -- Generate dates for each day in January
@@ -188,10 +216,13 @@ ELSE 'Premium'
 END as price_category
 FROM products;
 ```
+</details>
 
-### Data Types Deep Dive
-
-#### Arrays
+#### **data types**
+<br>
+<br>
+<details>
+<summary><b>Arrays</b></summary>
 
 - PostgreSQL supports arrays of any built-in or user-defined type
 - Useful for denormalized data structures where appropriate
@@ -204,35 +235,56 @@ FROM products;
   WHERE tags IS NOT NULL;
 ```
 - Particularly useful for:
-  - Querying individual array elements 
-  - Joining array elements with other tables 
+  - Querying individual array elements
+  - Joining array elements with other tables
   - Aggregate operations on array elements
 - Can help avoid junction tables in some cases, though normalization is still preferred for most relationships
 
-#### Boolean
+</details>
+<br>
+
+<details>
+<summary><b>Boolean</b></summary>
+
 - Use `IS` to test against literal true, false, and null rather than `=`
 - Can be aggregated with `bool_and` and `bool_or`
+</details>
+<br>
+<details>
+<summary><b>Character and Text</b></summary>
 
-#### Character and Text
 - `text` and `varchar` are identical in PostgreSQL
 - `character varying` is an alias for `varchar`
 - `varchar(X)` is a text column with a check constraint of X characters
 - Useful functions: `regexp_split_to_table()` and `regexp_split_to_array()`
+- `regexp_matches`: Extract pattern matches from strings
+```postgresql
+-- Example: Extract all email addresses from a text column
+SELECT regexp_matches(description, '[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}', 'g')
+FROM documents;
+```
+</details>
+<br>
+<details>
+<summary><b>Numeric Types</b></summary>
 
-#### Numeric Types
 - Available types
-  - `integer`: 32-bit signed numbers 
-  - `bigint`: 64-bit signed numbers 
-  - `smallint`: 16-bit signed numbers 
-  - `numeric`: arbitrary precision numbers 
+  - `integer`: 32-bit signed numbers
+  - `bigint`: 64-bit signed numbers
+  - `smallint`: 16-bit signed numbers
+  - `numeric`: arbitrary precision numbers
   - `real`: 32-bit floating point (6 decimal digits precision)
   - `double precision`: 64-bit floating point (15 decimal digits precision)
 - Given [how floating points are stored in computers](https://floating-point-gui.de/), never use `real` or `double precision` for monetary values
+</details>
+<br>
 
-#### Auto-incrementing IDs and UUIDs
+<details>
+<summary><b>Auto-incrementing IDs and UUIDs</b></summary>
+
 - Prefer `bigserial` over `serial` for new applications to avoid overflow issues
 - `serial` is a pseudo-type backed by an `integer`
-- When using `serial`, PostgreSQL automatically:
+- When using `serial`, PostgreSQL automatically creates a backing sequence and picks values from it:
 ```postgresql
   CREATE TABLE tablename (colname SERIAL);
 
@@ -246,22 +298,34 @@ ALTER SEQUENCE tablename_colname_seq OWNED BY tablename.colname;
 ```
 - Be cautious: The backing sequence uses `bigint`, but `serial` uses `integer`, which can lead to overflow issues
 
-#### UUIDs
+</details>
+<br>
+
+<details>
+<summary><b>UUIDs</b></summary>
+
 - Use the UUID data type instead of text for storing UUIDs
 - More memory efficient than storing UUIDs as text
 - Provides better type safety and validation
+</details>
+<br>
+<details>
+<summary><b>Binary Data Storage (bytea)</b></summary>
 
-#### Binary Data Storage (bytea)
 - PostgreSQL's bytea type can store binary data (like images)
 - Not recommended for:
   - Large files
   - High volume of binary data
 - Limitations:
   - No native chunking API
-  - Can impact database performance 
+  - Can impact database performance
 - Use case: When you specifically need transactional properties for your binary data
 
-#### Date/Time
+</details>
+<br>
+<details>
+<summary><b>Date/Time</b></summary>
+
 - Always use timestamps with time zones
 - PostgreSQL uses `bigint` internally for timestamp storage
 - ISO format is preferred for timestamp input:
@@ -288,36 +352,37 @@ from generate_series(
 
 -- the query above shows how mnay days are in the months of the year 2017
 ```  
+</details>
+<br>
+<details>
+<summary><b>JSON and JSONB</b></summary>
 
-### Advanced Features
-
-#### JSON and JSONB
 - JSON is stored as text with format validation
 - JSONB offers binary storage with:
-  - Full indexing capabilities 
-  - Advanced searching and processing 
-  - Single value per key restriction 
+  - Full indexing capabilities
+  - Advanced searching and processing
+  - Single value per key restriction
 - Best practice: Use traditional columns for static data and JSONB for flexible, occasional-use data
+</details>
+<br>
+<details>
+<summary><b>Enums</b></summary>
 
-#### Advanced Data Types
-
-##### Enums
 - PostgreSQL supports enum types
-- Best practice: Use a reference table instead of enum types 
+- Best practice: Use a reference table instead of enum types
   - Creates a table with ID and values
   - More flexible for future modifications
   - Can be referenced from other tables
 
-##### Regular Expression Functions
-`regexp_matches`: Extract pattern matches from strings
-```postgresql
--- Example: Extract all email addresses from a text column
-SELECT regexp_matches(description, '[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}', 'g')
-FROM documents;
-```
+</details>
+<br>
 
-### Business Logic in Database
-#### Check Constraints
+#### **business logic in db**
+<br>
+<br>
+<details>
+<summary><b>Check Constraints</b></summary>
+
 - Add business rules directly in the database schema
 - Examples:
 ```postgresql
@@ -337,7 +402,12 @@ discounted_price numeric,
 CHECK (discounted_price > 0 AND price > discounted_price)
 );
 ```
-#### Domains
+</details>
+<br>
+
+<details>
+<summary><b>Using Domains</b></summary>
+
 - Create reusable data types with built-in constraints
 - Useful for consistent validation across tables
 ```postgresql
@@ -352,8 +422,12 @@ name TEXT,
 age PositiveInteger  -- Using domain instead of plain integer
 );
 ```
+</details>
+<br>
 
-#### Custom Types and Constraints
+<details>
+<summary><b>Custom Types and Constraints</b></summary>
+
 ```postgresql
 -- Define a composite type
 CREATE TYPE address AS (
@@ -372,10 +446,14 @@ CREATE TABLE customer (
 INSERT INTO customer (name, billing_address)
 VALUES ('John Doe', ROW('123 Main St', 'Anytown', '12345'));
 ```
+</details>
+<br>
 
-### Anti-patterns to avoid
-
-#### Entity-Attribute-Value (EAV)
+#### **antipatterns to avoid**
+<br>
+<br>
+<details>
+<summary><b>Entity-Attribute-Value (EAV)</b></summary>
 
 Problems include:
 
@@ -383,42 +461,67 @@ Problems include:
 - Susceptible to typos in entity and parameter fields
 - Difficult to query and interpret results
 - **Solution**: Use proper modeling with JSONB for extension points
+</details>
+<br>
 
-#### Multiple Values per Column
+<details>
+<summary><b>Multiple Values per Column</b></summary>
+
 Instead of storing multiple values in a text field (e.g., hashtags), use PostgreSQL arrays for better searching and sorting capabilities.
+</details>
+<br>
 
-### Advanced Features and Considerations
+#### **other features and considerations**
+<br>
+<br>
 
-#### Partitioning
+<details>
+<summary><b>Partitioning</b></summary>
 
-- Trade-offs include:
-  - Need for per-partition indexes 
-  - Foreign key relationship limitations 
+Trade-offs include:
+  - Need for per-partition indexes
+  - Foreign key relationship limitations
   - Benefits from partition pruning often outweigh limitations
+</details>
+<br>
 
-#### Concurrency and Transactions
+<details>
+<summary><b>Concurrency and Transactions</b></summary>
+
 - Default isolation level is "read committed"
-- Consider concurrency behavior in data modeling 
-- Avoid designs that create competition for single shared resources 
+- Consider concurrency behavior in data modeling
+- Avoid designs that create competition for single shared resources
 - Batch updates need careful handling to prevent lost updates
+</details>
+<br>
 
-#### Views and Materialized Views
+<details>
+<summary><b>Views and Materialized Views</b></summary>
+
 - Views hide query complexity
 - Materialized Views cache results but need periodic refreshing
 - Consider setting up CRON jobs for materialized view refreshes
+</details>
+<br>
 
-#### Event Handling
+<details>
+<summary><b>Event Handling</b></summary>
+
 - Triggers run within transactions but can create bottlenecks
 - `LISTEN/NOTIFY` provides event-driven capabilities but:
-  - Requires active connections 
-  - Not suitable for event accumulation 
+  - Requires active connections
+  - Not suitable for event accumulation
   - Works well for notification-driven query refreshes
+</details>
+<br>
 
-### Final Thoughts
+---
+
+### **final thoughts**
 This book transformed my view of databases. I now see them as fully-qualified services that are primarily optimized for data storage and retrieval but capable of much more. I'll definitely be spending more time deepening my knowledge of databases.
 
-### Room for Improvement
-- The book contained numerous typos
+### **things I didn't like about this book**
+- It contained numerous typos
 - Required frequent context switching across different datasets (Twitter, F1, geonames, pubnames, etc.)
 - Some key dataset links were broken
 
